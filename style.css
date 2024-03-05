@@ -1,4 +1,294 @@
-.conteiner{
+body {
+    font-family: "Open sans", sans-serif;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.text-little {
+    font-size: 12px;
+}
+
+.container {
     max-width: 1100px;
     margin: 0 auto;
+}
+
+.header-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d4d4d4;
+    padding-left: 100%;
+    margin-left: -100%;
+    padding-right: 100%;
+    margin-right: -100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list {
+    display: flex;
+    gap: 16px;
+    margin-right: 270px;
+}
+
+.menu-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.arrow::after {
+    content: "";
+    background-image: url('images/chevron-down-img.svg');
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-img::before {
+    content: "";
+    background-image: url('images/gps-target.svg');
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.header-header_phone {
+    padding-right: 20px;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.logo-main::after {
+    content: "";
+    background-image: url('./images/Vector.svg');
+    display: inline-block;
+    cursor: pointer;
+    width: 136px;
+    height: 24px;
+}
+
+.main-search {
+    display: flex;
+}
+
+.search-zone {
+    width: 307px;
+    height: 49px;
+    border: 1px solid #d4d4d4;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.search-zone::placeholder {
+    font-size: 14px;
+}
+
+input {
+    padding-left: 16px;
+}
+
+.search-button {
+    height: 49px;
+    width: 56px;
+    border: 1px solid #E0001B;
+    background-color: #E0001B;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+}
+
+.search-button::after {
+    content: "";
+    background-image: url('images/search-img.svg');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.menu-main_list {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.menu-main_item {
+    cursor: pointer;
+    text-align: center;
+    height: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu-main_item:hover,
+.hovering:hover {
+    background-color: #F8F8F8;
+}
+
+.notification {
+    width: 182px;
+}
+.header-footer{
+    margin-top: 28px;
+}
+.favorite::before {
+    content: "";
+    background-image: url('./images/favorite-img.svg');
+    width: 24px;
+    height: 24px;
+}
+
+.favorite::after {
+    content: "3";
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    background-color: #E0001B;
+    align-self: center;
+    color: white;
+}
+
+.compare {
+    width: 142px;
+}
+
+.compare::before {
+    content: "";
+    background-image: url('./images/compare-img.svg');
+    width: 24px;
+    height: 22px;
+}
+
+.cart::before {
+    content: "";
+    background-image: url('./images/cart-img.svg');
+    width: 22px;
+    height: 22px;
+}
+
+.cart::after {
+    content: "7";
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    background-color: #E0001B;
+    align-self: center;
+    color: white;
+}
+
+.menu-footer_list {
+    display: flex;
+    align-items: center;
+}
+
+.catalog {
+    background-color: #E0001B;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    cursor: pointer;
+    width: 126px;
+}
+
+.burger-menu {
+    position: relative;
+    width: 20px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger-line,
+.burger-menu::after,
+.burger-menu::before {
+    content: "";
+    color: #ffffff;
+    width: 19px;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.burger-menu::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.burger-menu::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 12px;
+}
+
+.menu-footer_item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    padding: 20px 11px 20px 11px;
+}
+.hovering{
+    background-color: #f8f8f891;
+}
+.product::before{
+    content: "";
+    background-image: url('./images/product-img.svg');
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.school::before{
+    content: "";
+    background-image: url('./images/school-img.svg');
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.pens::before{
+    content: "";
+    background-image: url('./images/pens-img.svg');
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.trade::before{
+    content: "";
+    background-image: url('./images/trade-img.svg');
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.discount{
+    color: #E0001B;
+}
+.discount::before{
+    content: "";
+    background-image: url('./images/discount-img.svg');
+    display: inline-block;
+    width: 16px;
+    height: 16px;
 }

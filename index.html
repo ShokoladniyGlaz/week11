@@ -5,26 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <title>Shapka</title>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <div class="header-footer">
-                <div class="logo">Махачкала</div>
-                <div class="header-footer_nav">
+            <div class="header-header text-little">
+                <div class="logo logo-img">Махачкала</div>
+                <div class="header-header_nav">
                     <nav class="menu">
-                        <ul class="menu-list">
+                        <ul class="menu-list ">
                             <li class="menu-item">Магазины</li>
-                            <li class="menu-item">Покупателям</li>
-                            <li class="menu-item">Юридическим лицам</li>
+                            <li class="menu-item arrow">Покупателям</li>
+                            <li class="menu-item arrow">Юридическим лицам</li>
                         </ul>
                     </nav>
                 </div>
-                <div class="header-footer_phone">
-
+                <div class="header-header_phone">
+                    8-800-999-99-99 (c 03:00 до 22:00)
                 </div>
+            </div>
+            <div class="header-main">
+                <div class="logo-main"></div>
+                <form action="" class="main-search">
+                    <input type="search" name="kk" placeholder="Быстрый поиск" class="search-zone">
+                    <button type="submit" class="search-button"></button>
+                </form>
+                <nav class="menu-main">
+                    <ul class="menu-main_list">
+                        <li class="menu-main_item notification favorite">Избранное</li>
+                        <li class="menu-main_item compare">Сравнить</li>
+                        <li class="menu-main_item notification cart">Корзина</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-footer">
+                <nav class="menu-footer">
+                    <ul class="menu-footer_list">
+                        <li class="menu-footer_item catalog ">
+                            <div class="burger-menu">
+                                <div class="burger-line"></div>
+                            </div>
+                            Каталог
+                        </li>
+                        <li class="menu-footer_item hovering product">Бумажная продукция</li>
+                        <li class="menu-footer_item hovering school">Товары для школы</li>
+                        <li class="menu-footer_item hovering pens">Товары для творчества</li>
+                        <li class="menu-footer_item hovering trade">Товары для торговли</li>
+                        <li class="menu-footer_item hovering discount">Скидки и акции</li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
